@@ -1,0 +1,21 @@
+n = int(input("¿Cuántas edades desea ingresar? ")) 
+f = int(input("¿Cuál es su edad de interés?"))
+lista = [] 
+cantidad = 0 
+
+while cantidad < n:
+    valor = int(input("Ingrese un número: "))
+    if valor > 0: 
+        lista.append(valor) 
+        cantidad += 1
+    else: 
+        print("Número no válido, ingrese un valor de nuevo")
+
+interes = 0
+for i in lista:  
+    if i >= f: 
+        interes += 1 
+
+print("Hay " + str(interes) + " edades de su interés")
+
+

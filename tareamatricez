@@ -1,0 +1,21 @@
+def crear_matriz(filas, columnas):
+    matriz = []
+    for i in range(filas):
+        fila = []
+        for j in range(columnas): 
+            valor = int(input(f"Ingrese la edad para[{i},{j}]: "))
+            fila.append(valor)
+        matriz.append(fila)
+    return matriz 
+
+f = int(input("Ingrese el número de filas: "))
+c = int(input("Ingrese el número de columnas: "))
+matriz = crear_matriz(f,c)
+
+edad_maxima = 0
+for fila in matriz:
+    for edad in fila:
+        if edad > edad_maxima:
+            edad_maxima = edad
+
+print(f"La edad más grande en la matriz es {edad_maxima}")

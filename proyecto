@@ -1,0 +1,71 @@
+import turtle
+
+# Preguntamos al usuario por su nombre, edad, color favorito y el nombre del dinosaurio
+nombre = input("Hola, ¿cómo te llamas? ")
+edad = int(input("¿Cuántos años tienes?"))
+color = input("¿Cuál es tu color favorito?")
+dino_nombre = input("¿Cómo se llama el dinosaurio en la historia?")
+
+# Configuramos la ventana de turtle
+ventana = turtle.Screen()
+ventana.bgcolor("white")
+
+# Creamos una tortuga para dibujar
+tortuga = turtle.Turtle()
+tortuga.speed(0)
+
+# Secuencia 1: El Desayuno
+tortuga.penup()
+tortuga.goto(-150, 100)
+tortuga.pendown()
+tortuga.color(color)
+tortuga.begin_fill()
+tortuga.circle(50)
+tortuga.end_fill()
+tortuga.penup()
+tortuga.goto(-150, 50)
+tortuga.pendown()
+tortuga.write("Secuencia 1: El Desayuno", font=("Arial", 12, "bold"))
+tortuga.penup()
+tortuga.goto(-150, 20)
+tortuga.pendown()
+tortuga.write("Hoy es el cumpleaños de " + nombre + " y tiene " + str(edad) + " años.", font=("Arial", 10))
+
+# Secuencia 2: El Paseo por el Bosque
+tortuga.penup()
+tortuga.goto(-50, 100)
+tortuga.pendown()
+tortuga.color(color)
+tortuga.begin_fill()
+tortuga.circle(50)
+tortuga.end_fill()
+tortuga.penup()
+tortuga.goto(-50, 50)
+tortuga.pendown()
+tortuga.write("Secuencia 2: El Paseo por el Bosque", font=("Arial", 12, "bold"))
+tortuga.penup()
+tortuga.goto(-50, 20)
+tortuga.pendown()
+tortuga.write("El dinosaurio se llama " + dino_nombre + " y siempre tiene hambre.", font=("Arial", 10))
+
+# Secuencia 3: La Sorpresa en la Cueva
+tortuga.penup()
+tortuga.goto(50, 100)
+tortuga.pendown()
+tortuga.color(color)
+tortuga.begin_fill()
+tortuga.circle(50)
+tortuga.end_fill()
+tortuga.penup()
+tortuga.goto(50, 50)
+tortuga.pendown()
+tortuga.write("Secuencia 3: La Sorpresa en la Cueva", font=("Arial", 12, "bold"))
+tortuga.penup()
+tortuga.goto(50, 20)
+tortuga.pendown()
+tortuga.write("El dinosaurio encontró un árbol lleno de donuts en el bosque.", font=("Arial", 10))
+
+# Secuencia 4: La Lección del Búho Sabio
+tortuga.penup()
+tortuga.goto(150, 100)
+tort

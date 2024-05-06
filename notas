@@ -1,0 +1,9 @@
+nota = int(input("Ingrese su nota del parcial: "))
+
+if nota<0 or nota> 100: 
+    print("Nota no valida")
+else: 
+    if nota>=65:
+        print("Felicidades gano su parcial ")
+    else: 
+        print("Perdio su parcial ")
